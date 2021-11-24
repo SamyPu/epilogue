@@ -118,6 +118,10 @@ section:nth-of-type(4) div {
   section {
     margin: 0;
   }
+
+  .col {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) and (max-width: 914px) {
   .col {
