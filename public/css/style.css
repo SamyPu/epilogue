@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -21,17 +22,22 @@ header div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 header div h1 {
-  font-size: 40px;
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Pacifico", cursive;
   border-bottom: 1px white solid;
   border-radius: 1px;
   padding: 5px 80px;
   margin-bottom: 30px;
 }
 header div p, header div span {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 header div p span, header div span span {
   border-bottom: 1px white dotted;
@@ -49,7 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 48%;
-  min-width: 320px;
+  min-width: 310px;
 }
 
 .intro > div {
@@ -61,16 +67,43 @@ section {
   align-items: center;
 }
 .intro > div > div {
-  border: 1px solid black;
+  border: 2px solid #505050;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 70px;
+  width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 35px;
+}
+.intro > div > div i {
+  color: #505050;
+  font-size: 25px;
+  padding-top: 5px;
 }
 .intro > div h2 {
-  font-size: 30px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.intro > div p {
+  width: 50%;
+  min-width: 310px;
+  line-height: 25px;
+  color: #505050;
+}
+.intro > div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #505050;
+  letter-spacing: 5px;
+  padding: 15px 35px;
+  border: 2px solid #505050;
+  border-radius: 5px;
+  margin: 20px 0px;
 }
 
 .bg-1 {
@@ -89,6 +122,24 @@ section {
   background-image: url("../img/pic04.jpg");
 }
 
+.col div:nth-of-type(2) p {
+  min-width: 310px;
+  line-height: 25px;
+  color: #505050;
+}
+.col div:nth-of-type(2) a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #505050;
+  letter-spacing: 5px;
+  padding: 15px 35px;
+  border: 2px solid #505050;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
 .box {
   background-size: cover;
   background-position: center;
@@ -97,6 +148,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.box h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
 }
 .box + div {
   background-color: white;
@@ -114,18 +172,93 @@ section:nth-of-type(4) div {
   width: 40%;
 }
 
+.before-footer .col {
+  display: flex;
+  align-items: center;
+  margin: 100px 10px;
+}
+.before-footer .col h3 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.before-footer .col p {
+  width: 50%;
+  min-width: 310px;
+  line-height: 25px;
+  color: #505050;
+}
+.before-footer .col a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #505050;
+  letter-spacing: 5px;
+  padding: 15px 35px;
+  border: 2px solid #505050;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+.before-footer .col .hr-footer {
+  width: 100px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #505050;
+  border-radius: 1px;
+}
+
+footer div a {
+  margin: 10px;
+}
+footer div a i {
+  color: #505050;
+}
+footer p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #505050;
+  margin: 30px 0px;
+}
+
 @media (max-width: 576px) {
+  header {
+    height: 150px;
+  }
+  header div h1 {
+    font-size: 40px;
+  }
+  header div p, header div span {
+    font-size: 12px;
+  }
+
+  .intro > div {
+    margin: 40px 0px;
+    padding: 0px;
+  }
+
   section {
     margin: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .col {
-    width: 100%;
+    width: 90%;
+  }
+
+  .before-footer .col {
+    margin: 30px 0px;
   }
 }
 @media (min-width: 576px) and (max-width: 914px) {
+  section {
+    display: flex;
+    justify-content: center;
+  }
+
   .col {
-    width: 100%;
+    width: 90%;
   }
 }
 
